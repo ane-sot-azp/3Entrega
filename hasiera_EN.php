@@ -11,12 +11,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera_EN.php"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
-                    padding="8px" class="center"></a>
-        </div>
-    </header>
+
+<?php include 'header_EN.php+'; ?>
+
     <div class="sticky">
         <div class="navbar">
             <div class="left">

@@ -12,43 +12,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="hasiera.php"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px" padding="8px"
-                    class="center"></a>
-        </div>
-    </header>
-    <div class="sticky">
-        <div class="navbar">
-            <div class="left">
-                <a class="left" href="hasiera.php">Hasiera</a>
-                <a class="left" href="norGara.php">Nor gara</a>
-                <div class="subnav left active">
-                    <button class="subnavbtn">Katalogoa <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="katalogoa.php"><b>Produktu guztiak |</b></a>
-                        <a href="katalogoaMugikorrak.php">Mugikorrak</a>
-                        <a href="katalogoaOrdenagailuak.php">Ordenagailuak</a>
-                        <a href="katalogoaMonitoreak.php">Monitoreak</a>
-                        <a href="katalogoaAurikularrak.php">Aurikularrak</a>
-                    </div>
-                </div>
-                <a class="left" href="prodSaldu.php">Zure produktuak saldu</a>
-                <a class="left" href="kontaktua.php">Kontaktua</a>
-            </div>
-            <div class="right">
-                <a class="right">
-                    <form action="buscar.php" method="GET">
-                        <input type="search" name="query" placeholder="Bilatu...">
-                    </form>
-                </a>
-                <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera_EN.php"><img src="irudiak/IKONOAK/uk.png"></a>
+    <?php include 'header.php'; ?>
 
-            </div>
-        </div>
-    </div>
+
     <div id="saioHasiera" class="lehioa">
         <div class="lehioa-contenido">
             <a href="#" class="itxi">&times;</a>
@@ -82,7 +48,7 @@
                             <div class="accordion-content">
                                 <input type="checkbox" id="acer" name="acer" />
                                 <label for="acer">Acer</label><br>
-                                <input type="checkbox" id=alurin name="alurin"/>
+                                <input type="checkbox" id=alurin name="alurin" />
                                 <label for="alurin">Alurin</label><br>
                                 <input type="checkbox" id="apple" name="apple" />
                                 <label for="apple">Apple</label><br>
@@ -94,13 +60,13 @@
                                 <label for="hp">HP</label><br>
                                 <input type="checkbox" id="lenovo" name="lenovo" />
                                 <label for="hp">Lenovo</label><br>
-                                <input type="checkbox" id=medion name="medion"/>
+                                <input type="checkbox" id=medion name="medion" />
                                 <label for="medion">Medion</label><br>
                                 <input type="checkbox" id="msi" name="msi" />
                                 <label for="msi">MSI</label><br>
                                 <input type="checkbox" id="pccom" name="pccom" />
                                 <label for="pccom">PcCom</label><br>
-                               
+
                             </div>
                         </div>
                     </li>
@@ -164,7 +130,7 @@
                                 <h3>Sistema eragilea:</h3>
                             </label>
                             <div class="accordion-content">
-                               
+
                                 <input type="checkbox" name="macos" id="macos" />
                                 <label for="macos">MacOS</label> <br>
                                 <input type="checkbox" name="windows10" id="windows10" />
@@ -193,10 +159,10 @@
                             </div>
                         </div><br><br>
                     </li>
- 
+
                     <input class="botoiaez" type="reset" id="ezabatu" value="Ezabatu" />
- 
- 
+
+
                 </form>
             </ul>
         </div>
@@ -209,7 +175,7 @@
         <div id="produktua2">
             <img id="argazkia" src="irudiak/PRODUKTUAK/ORDENAGAILUAK/2.1.Produktua.png" />
             <p><b>Marka:</b> Alurin</p>
-            <p><b>Modeloa:</b>  Go Start N24</p>
+            <p><b>Modeloa:</b> Go Start N24</p>
             <p><b>Prezioa:</b> 239€ </p>
         </div>
         <div id="produktua3">
@@ -254,7 +220,7 @@
             <p><b>Modeloa:</b> Revolt 3050</p>
             <p><b>Prezioa:</b> 538€ </p>
         </div>
- 
+
     </div>
 
     <?php include 'footer.php'; ?>
