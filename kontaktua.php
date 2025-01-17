@@ -14,27 +14,27 @@
 <body>
     <header>
         <div class="header">
-            <a href="hasiera.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px" padding="8px"
+            <a href="hasiera.php"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px" padding="8px"
                     class="center"></a>
         </div>
     </header>
     <div class="sticky">
         <div class="navbar">
             <div class="left">
-                <a class="left" href="hasiera.html">Hasiera</a>
-                <a class="left" href="norGara.html">Nor gara</a>
+                <a class="left" href="hasiera.php">Hasiera</a>
+                <a class="left" href="norGara.php">Nor gara</a>
                 <div class="subnav left">
                     <button class="subnavbtn">Katalogoa <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
-                        <a href="katalogoa.html"><b>Produktu guztiak |</b></a>
-                        <a href="katalogoaMugikorrak.html">Mugikorrak</a>
-                        <a href="katalogoaOrdenagailuak.html">Ordenagailuak</a>
-                        <a href="katalogoaMonitoreak.html">Monitoreak</a>
-                        <a href="katalogoaAurikularrak.html">Aurikularrak</a>
+                        <a href="katalogoa.php"><b>Produktu guztiak |</b></a>
+                        <a href="katalogoaMugikorrak.php">Mugikorrak</a>
+                        <a href="katalogoaOrdenagailuak.php">Ordenagailuak</a>
+                        <a href="katalogoaMonitoreak.php">Monitoreak</a>
+                        <a href="katalogoaAurikularrak.php">Aurikularrak</a>
                     </div>
                 </div>
-                <a class="left" href="prodSaldu.html">Zure produktuak saldu</a>
-                <a class="left active" href="kontaktua.html">Kontaktua</a>
+                <a class="left" href="prodSaldu.php">Zure produktuak saldu</a>
+                <a class="left active" href="kontaktua.php">Kontaktua</a>
             </div>
             <div class="right">
                 <a class="right">
@@ -44,7 +44,7 @@
                 </a>
                 <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera_EN.html"><img src="irudiak/IKONOAK/uk.png"></a>
+                <a class="hizkuntza hiz right" href="hasiera_EN.php"><img src="irudiak/IKONOAK/uk.png"></a>
 
             </div>
         </div>
@@ -102,19 +102,10 @@
             </form>
         </div>
     </div>
-    <footer>
-        <div class="footer">
-            <div class="footerra">
-                <div class="footlogo"><img src="irudiak/IKONOAK/LOGO txuria.svg" width="100px"></div>
-                <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> C. Urdaneta, 6, 20240 Ordizia,
-                    Guipuzkoa</div>
-                <div class="footmail footleft"><i class="fa-solid fa-envelope"></i> administrazioa@iamarket.com</div>
-                <div class="foottel footleft"><i class="fa-solid fa-phone"></i> +34 623 34 76 34</div>
-            </div>
-            <div class="footrights"><i class="fa-solid fa-copyright"></i> 2024 AI MARKET S.L.</div>
 
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
+
+
 </body>
 
 </html>

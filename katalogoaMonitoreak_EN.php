@@ -14,27 +14,27 @@
 <body>
     <header>
         <div class="header">
-            <a href="hasiera_EN.html"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
+            <a href="hasiera_EN.php"><img class="logo" src="irudiak/IKONOAK/LOGO.svg" alt="Logoa" height="150px"
                     padding="8px" class="center"></a>
         </div>
     </header>
     <div class="sticky">
         <div class="navbar">
             <div class="left">
-                <a class="left" href="hasiera_EN.html">Home</a>
-                <a class="left" href="norGara_EN.html">About us</a>
+                <a class="left" href="hasiera_EN.php">Home</a>
+                <a class="left" href="norGara_EN.php">About us</a>
                 <div class="subnav left active">
                     <button class="subnavbtn">Catalogue <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
-                        <a href="katalogoa_EN.html"><b>All products |</b></a>
-                        <a href="katalogoaMugikorrak_EN.html">Mobile phones</a>
-                        <a href="katalogoaOrdenagailuak_EN.html">Laptops</a>
-                        <a href="katalogoaMonitoreak_EN.html">Screens</a>
-                        <a href="katalogoaAurikularrak_EN.html">Headphones</a>
+                        <a href="katalogoa_EN.php"><b>All products |</b></a>
+                        <a href="katalogoaMugikorrak_EN.php">Mobile phones</a>
+                        <a href="katalogoaOrdenagailuak_EN.php">Laptops</a>
+                        <a href="katalogoaMonitoreak_EN.php">Screens</a>
+                        <a href="katalogoaAurikularrak_EN.php">Headphones</a>
                     </div>
                 </div>
-                <a class="left" href="prodSaldu_EN.html">Sell your products</a>
-                <a class="left" href="kontaktua_EN.html">Contact us</a>
+                <a class="left" href="prodSaldu_EN.php">Sell your products</a>
+                <a class="left" href="kontaktua_EN.php">Contact us</a>
             </div>
             <div class="right">
                 <a class="right">
@@ -44,7 +44,7 @@
                 </a>
                 <a class="right" href="#saskia"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a class="right" href="#saioHasiera"><i class="fa-solid fa-user"></i></a>
-                <a class="hizkuntza hiz right" href="hasiera.html"><img src="irudiak/IKONOAK/ikurriña.png"></a>
+                <a class="hizkuntza hiz right" href="hasiera.php"><img src="irudiak/IKONOAK/ikurriña.png"></a>
 
             </div>
         </div>
@@ -231,19 +231,10 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer">
-            <div class="footerra">
-                <div class="footlogo"><img src="irudiak/IKONOAK/LOGO txuria.svg" width="100px"></div>
-                <div class="foothelb footleft"><i class="fa-solid fa-location-dot"></i> C. Urdaneta, 6, 20240 Ordizia,
-                    Guipuzkoa</div>
-                <div class="footmail footleft"><i class="fa-solid fa-envelope"></i> administrazioa@iamarket.com</div>
-                <div class="foottel footleft"><i class="fa-solid fa-phone"></i> +34 623 34 76 34</div>
-            </div>
-            <div class="footrights"><i class="fa-solid fa-copyright"></i> 2024 AI MARKET S.L.</div>
 
-        </div>
-    </footer>
+    <?php include 'footer_EN.php'; ?>
+
+
 
 </body>
 
