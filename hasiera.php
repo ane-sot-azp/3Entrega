@@ -36,32 +36,30 @@
     <div class="produktuak">
         <h1>Azken produktuak</h1>
     </div>
-    <div class="imagenes">
-        <div class="imagen" id="imagen1">
-            <a href="katalogoaOrdenagailuak.php" class="irudiak">
-                <img src="irudiak/PRODUKTUAK/ORDENAGAILUAK/1.1Produktua.png" alt="Imagen 1">
-            </a>
-            <p class="deskribapena">HP 15-FD0079NS</p>
-        </div>
-        <div class="imagen" id="imagen2">
-            <a href="katalogoaMugikorrak.php" class="irudiak">
-                <img src="irudiak/PRODUKTUAK/MUGIKORRAK/1.XIAOMI REDMI NOTE 13 1.png" alt="Imagen 2">
-            </a>
-            <p class="deskribapena">Redmi Note 13</p>
-        </div>
-        <div class="imagen" id="imagen3">
-            <a href="katalogoaMonitoreak.php" class="irudiak">
-                <img src="irudiak/PRODUKTUAK/MONITOREAK/1.1.Produktua.png" alt="Imagen 3">
-            </a>
-            <p class="deskribapena">MSI G24C4 E2</p>
-        </div>
-        <div class="imagen" id="imagen4">
-            <a href="katalogoaAurikularrak.php" class="irudiak">
-                <img src="irudiak/PRODUKTUAK/AURIKULARRAK/4.AirPods 3ªGeneración 2.png" alt="Imagen 4">
-            </a>
-            <p class="deskribapena">AirPods 3ªGen</p>
-        </div>
-    </div>
+    <?php
+
+        include 'db.php';
+
+        $sql = "SELECT id, categoria, enlace, imagen, descripcion FROM productos";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            echo '<div class="imagenes">';
+            while ($row = $result->fetch_assoc()) {
+                echo '<div class="imagen" id="imagen' . $row['id'] . '">';
+                echo '<a href="' . $row['enlace'] . '" class="irudiak">';
+                echo '<img src="' . $row['imagen'] . '" alt="Imagen ' . $row['id'] . '">';
+                echo '</a>';
+                echo '<p class="deskribapena">' . $row['descripcion'] . '</p>';
+                echo '</div>';
+            }
+            echo '</div>';
+        } else {
+            echo "Ez da produkturik aurkitu";
+        }
+
+        $conn->close();
+        ?>
     <div class="produktuak">
         <h1>Albisteak</h1>
     </div>
